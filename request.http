@@ -1,0 +1,25 @@
+GET http://localhost:3000/api/posts HTTP/1.1
+
+###
+
+POST http://localhost:3000/api/posts HTTP/1.1
+content-type: application/json
+
+{
+    "title":"segunda prueba post",
+    "content":"2 prueba post content"
+}
+
+###
+
+PUT http://localhost:3000/api/posts/611d96462a62721e1cbb5e90
+Content-Type: application/json
+
+{
+    "title": "primer post",
+    "content":" content actualizado"
+}
+
+###
+
+DELETE http://localhost:3000/api/posts/611d99d02a62721e1cbb5e98
